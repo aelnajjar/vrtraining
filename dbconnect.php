@@ -1,6 +1,6 @@
 <?php
 
-	 $DB_host = "127.0.0.1:70";
+	 $DB_host = "localhost:70";
 	 $DB_user = "root";
 	 $DB_pass = "mafiaVR12345";
 	 $DB_name = "vr game";
