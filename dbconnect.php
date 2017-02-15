@@ -5,11 +5,11 @@
 	 $DB_pass = "4561cc15";
 	 $DB_name = "vrgame";
 	 
-	 $MySQLi_CON = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
+	 $MySQLi = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
     
-     if($MySQLi_CON->connect_errno)
+     if($MySQLi->connect_errno)
      {
-         die("ERROR : -> ".$MySQLi_CON->connect_error);
+         die("ERROR : -> ".$MySQLi->connect_error);
      }
 
 
