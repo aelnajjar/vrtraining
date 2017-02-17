@@ -51,7 +51,7 @@ $MySQLi_CON->close();
 
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	Welcome To Main User Page</a><br /><br />
-    <p>Thank you for your registration in VR-Based Crises Training System</p>you can login now in your platform and enjoying this amazing training !
+    <p>Thank you for your registration in VR-Based Crises Training System</p>You can login now in your platform and enjoy this AMAZING Training!
 </div>
 
 </body>
