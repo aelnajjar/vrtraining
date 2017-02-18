@@ -33,7 +33,7 @@ $MySQLi_CON->close();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">VR-Based Crises Training System</a>
+          <a class="navbar-brand" href="#">Wazza YouTube</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -51,7 +51,7 @@ $MySQLi_CON->close();
 
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	Welcome To Main User Page</a><br /><br />
-    <p>Thank you for your registration in VR-Based Crises Training System</p>You can login now in your platform and enjoy this AMAZING Training!
+    <p>We can Throw What We Like In Here</p>
 </div>
 
 </body>
