@@ -44,6 +44,8 @@ $MySQLi_CON->close();
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
             <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
+		  <li><a href="server.php?server"><span class="glyphicon glyphicon-server"></span>&nbsp; server</a></li>
+		  
           </ul>
         </div><!--/.nav-collapse -->
       </div>
