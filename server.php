@@ -154,14 +154,14 @@ table tr:last-child td {
 	
 		<tr>
 			<td>Earthquake<b><?php echo $file; ?></b> 1</td>
-			<td><?php echo $file_msg; ?></td>
-			<td>Yes</td>
+			<td><?php echo $file_msg; ?>YES</td>
+			<td>YES</td>
 		</tr>
 		
 		<tr>
 			<td>Fire</td>
 			<td><?php echo $mail_msg; ?>NO</td>
-			<td>Yes</td>
+			<td>YES</td>
 		</tr>
 
 
@@ -169,19 +169,19 @@ table tr:last-child td {
 		<tr>
 			<td>Gas Leaking</td>
 			<td><?php echo $mail_msg; ?>NO</td>
-			<td>Yes</td>
+			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Electricity Fault</td>
-			<td><?php echo $mail_msg; ?>Yes</td>
-			<td>Yes</td>
+			<td><?php echo $mail_msg; ?>YES</td>
+			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Lightning</td>
 			<td><?php echo $file_msg; ?></td>
-			<td>Yes</td>
+			<td>YES</td>
 		</tr>
 
 
