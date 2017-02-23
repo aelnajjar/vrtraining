@@ -53,7 +53,7 @@ $MySQLi_CON->close();
 
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	Welcome To VR-Based Crises Training System</a><br /><br />
-    <p>You Can Now Login In Your Platform and Enjoy This Amazing Training !</p>
+    <p>You Can Now Login Using Your Platform and Enjoy This Amazing Training !</p>
 </div>
 
 </body>
