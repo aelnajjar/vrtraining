@@ -154,7 +154,7 @@ table tr:last-child td {
 	
 		<tr>
 			<td>Earthquake<b><?php echo $file; ?></b> 1</td>
-			<td><?php echo $file_msg; ?>YES</td>
+			<td><?php echo $userRow['username'];</td>
 			<td>YES</td>
 		</tr>
 		
