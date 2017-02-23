@@ -11,46 +11,45 @@ $MySQLi_CON->close();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Pre-Installation checklist</title
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome - <?php echo $userRow['email']; ?></title>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
+
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<style type="text/css">
-/*TABLE CSS*/
-#wrap {
-    margin: 10px auto 0;
-    text-align: center;
-    width: 500px;
-}
+<body>
 
-.btn {
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 16px;
-  background: #3498db;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cb0fd;
-  text-decoration: none;
-}
-
-table a:link {
-	color: #666;
-	font-weight: bold;
-	text-decoration:none;
-}
-table {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#666;
-	font-size:12px;
-	background:#eaebec;
-	border:#ccc 1px solid;
-margin-bottom: 20px;
-width: 100%;
-}
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">VR-Based Crises Training System</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Stats</a></li>
+            <li><a href="server.php?server"><span class="glyphicon glyphicon-server"></span>&nbsp; Records</a></li>
+            <li><a href="#">Friends</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
+            <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
+		 
+		  
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
 table th {
 	padding:21px 25px 22px 25px;
 	border-top:1px solid #fafafa;
