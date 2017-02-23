@@ -180,7 +180,7 @@ table tr:last-child td {
 
 		<tr>
 			<td>Lightning</td>
-			<td><?php echo $file_msg; ?></td>
+			<td><?php echo $file_msg; ?>NO</td>
 			<td>YES</td>
 		</tr>
 
