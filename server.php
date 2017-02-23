@@ -94,8 +94,8 @@ table tr:last-child td {
 	<!-- Table Header -->
 	<thead>
 		<tr>
-			<th>Required Fuctions</th>
-			<th>Current</th>
+			<th>Trainings</th>
+			<th>Completed</th>
 			<th>Recommended</th>
 		</tr>
 	</thead>
@@ -105,33 +105,33 @@ table tr:last-child td {
 	<tbody>
 	
 		<tr>
-			<td>Is the <b><?php echo $file; ?></b> file writable?</td>
+			<td>Earthquake<b><?php echo $file; ?></b> 1</td>
 			<td><?php echo $file_msg; ?></td>
 			<td>Yes</td>
 		</tr>
 		
 		<tr>
-			<td>Is the mail() function enabled?</td>
-			<td><?php echo $mail_msg; ?></td>
-			<td>Yes</td>
+			<td>Fire</td>
+			<td><?php echo $mail_msg; ?>NO</td>
+			<td></td>
 		</tr>
 
 
 
 		<tr>
-			<td>PHP Version</td>
-			<td><?php echo function_exists('phpversion') ? phpversion() : ''; ?></td>
-			<td><?php echo function_exists('phpversion') ? phpversion() : ''; ?></td>
+			<td>Gas Leaking</td>
+			<td><?php echo $mail_msg; ?>NO</td>
+			<td></td>
 		</tr>
 
 		<tr>
-			<td>Is MySQL enabled?</td>
-			<td><?php echo $mysql_msg; ?></td>
-			<td>Yes</td>
+			<td>Electricity Fault</td>
+			<td><?php echo $mail_msg; ?>Yes</td>
+			<td></td>
 		</tr>
 
 		<tr>
-			<td>Is file uploading enabled?</td>
+			<td>Lightning</td>
 			<td><?php echo $file_msg; ?></td>
 			<td>Yes</td>
 		</tr>
