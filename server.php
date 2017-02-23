@@ -49,7 +49,7 @@ $MySQLi_CON->close();
       </div>
     </nav>
 		
-	"\n . \n . \n";
+	"\r\n"
 	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -156,7 +156,7 @@ table tr:last-child td {
 		<tr>
 			<td>Fire</td>
 			<td><?php echo $mail_msg; ?>NO</td>
-			<td></td>
+			<td>Yes</td>
 		</tr>
 
 
@@ -164,13 +164,13 @@ table tr:last-child td {
 		<tr>
 			<td>Gas Leaking</td>
 			<td><?php echo $mail_msg; ?>NO</td>
-			<td></td>
+			<td>Yes</td>
 		</tr>
 
 		<tr>
 			<td>Electricity Fault</td>
 			<td><?php echo $mail_msg; ?>Yes</td>
-			<td></td>
+			<td>Yes</td>
 		</tr>
 
 		<tr>
