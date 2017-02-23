@@ -37,7 +37,7 @@ $MySQLi_CON->close();
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Stats</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="server.php?server"><span class="glyphicon glyphicon-server"></span>&nbsp; Records</a></li>
             <li><a href="#">Friends</a></li>
           </ul>
