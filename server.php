@@ -35,12 +35,13 @@ $MySQLi_CON->close();
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Stats</a></li>
-            <li><a href="server.php?server"><span class="glyphicon glyphicon-server"></span>&nbsp; Records</a></li>
+            <li class="active"><a href="#">Records</a></li>
+           
+		  <li><a href="home.php?home"><span class="glyphicon glyphicon-home"></span>&nbsp; home</a></li>
             <li><a href="#">Friends</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-		  <li class="active"><a href="#">Stats</a></li>
+		  
             <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
             <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
 		 
