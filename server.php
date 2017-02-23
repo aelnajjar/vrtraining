@@ -9,7 +9,6 @@ $query = $MySQLi_CON->query("SELECT * FROM users WHERE uid=".$_SESSION['userSess
 $userRow=$query->fetch_array();
 $MySQLi_CON->close();
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -49,7 +48,47 @@ $MySQLi_CON->close();
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Pre-Installation checklist</title
+</head>
+<style type="text/css">
+/*TABLE CSS*/
+#wrap {
+    margin: 10px auto 0;
+    text-align: center;
+    width: 500px;
+}
+
+.btn {
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 16px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	background:#eaebec;
+	border:#ccc 1px solid;
+margin-bottom: 20px;
+width: 100%;
+}
 table th {
 	padding:21px 25px 22px 25px;
 	border-top:1px solid #fafafa;
