@@ -141,7 +141,7 @@ table tr:last-child td {
 	<!-- Table Body -->
 
 </table>
-
+<li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
 
 <?php
 if (function_exists('mail') && is_writable($file) && function_exists('mysql_connect') && ini_get('file_uploads') == 1)
