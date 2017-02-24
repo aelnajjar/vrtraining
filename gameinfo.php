@@ -78,7 +78,7 @@ $rk = $_GET["rk"];
 
 
 
-$query = "SELECT username, status, email, banned, kills, wins FROM users2 WHERE regkey='$rk'";
+$query = "SELECT username, status, email, banned, earthquake, fire FROM users2 WHERE regkey='$rk'";
 
 if ($stmt = $mysqli->prepare($query)) {
     $stmt->execute();
