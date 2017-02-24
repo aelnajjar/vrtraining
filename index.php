@@ -13,7 +13,7 @@ if(isset($_POST['btn-login']))
 	$email = $MySQLi_CON->real_escape_string(trim($_POST['user_email']));
 	$upass = $MySQLi_CON->real_escape_string(trim($_POST['password']));
 	
-	$query = $MySQLi_CON->query("SELECT uid, email, password FROM users1 WHERE email='$email'");
+	$query = $MySQLi_CON->query("SELECT uid, email, password FROM users2 WHERE email='$email'");
 	$row=$query->fetch_array();
 	
 	if(password_verify($upass, $row['password']))
