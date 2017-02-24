@@ -14,7 +14,7 @@ if(isset($_POST['btn-signup']))
 	
 	$new_password = password_hash($upass, PASSWORD_DEFAULT);
 	
-	$check_email = $MySQLi_CON->query("SELECT email FROM users1 WHERE email='$email'");
+	$check_email = $MySQLi_CON->query("SELECT email FROM users WHERE email='$email'");
 	$count=$check_email->num_rows;
 	
 	$RandomKey = mt_rand(1,50);
@@ -27,7 +27,7 @@ if(isset($_POST['btn-signup']))
 		
 		
 		
-		$query = "INSERT INTO users1(username,email,password,regkey,status,banned) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned')";
+		$query = "INSERT INTO users(username,email,password,regkey,status,banned) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned')";
 
 		
 		if($MySQLi_CON->query($query))
