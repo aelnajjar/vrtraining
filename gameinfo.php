@@ -25,7 +25,7 @@ $username = $_GET["user"];
 $password = $_GET["password"];
 
 // create a prepared statement
-$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned FROM users1 WHERE username='$username'");
+$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned FROM users2 WHERE username='$username'");
 
 // bind parameters
 mysqli_stmt_bind_param($stmt, 's', $username);
@@ -78,7 +78,7 @@ $rk = $_GET["rk"];
 
 
 
-$query = "SELECT username, status, email, banned, kills, wins FROM users1 WHERE regkey='$rk'";
+$query = "SELECT username, status, email, banned, kills, wins FROM users2 WHERE regkey='$rk'";
 
 if ($stmt = $mysqli->prepare($query)) {
     $stmt->execute();
@@ -116,7 +116,7 @@ if ($conn->connect_error) {
 $status = $_GET["status"];
 $rk = $_GET["rk"];
     
-$sql = "UPDATE users1 SET status='$status' WHERE regkey='$rk'";
+$sql = "UPDATE users2 SET status='$status' WHERE regkey='$rk'";
 
 if ($conn->query($sql) === TRUE) {
     echo "successfully";
