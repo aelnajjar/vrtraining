@@ -168,19 +168,19 @@ table tr:last-child td {
 
 		<tr>
 			<td>Gas Leaking</td>
-			<td><?php  echo $userRow['earthquake']; ?></td>
+			<td><?php  echo $userRow['gas']; ?></td>
 			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Electricity Fault</td>
-			<td><?php  echo $userRow['earthquake']; ?></td>
+			<td><?php  echo $userRow['electricity']; ?></td>
 			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Game</td>
-			<td><?php  echo $userRow['earthquake']; ?></td>
+			<td><?php  echo $userRow['ourgame']; ?></td>
 			<td>YES</td>
 		</tr>
 		
