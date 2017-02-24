@@ -5,7 +5,7 @@ if(!isset($_SESSION['userSession']))
 {
 	header("Location: index.php");
 }
-$query = $MySQLi_CON->query("SELECT * FROM users WHERE uid=".$_SESSION['userSession']);
+$query = $MySQLi_CON->query("SELECT * FROM users1 WHERE uid=".$_SESSION['userSession']);
 $userRow=$query->fetch_array();
 $MySQLi_CON->close();
 ?>
@@ -154,13 +154,13 @@ table tr:last-child td {
 	
 		<tr>
 			<td>Earthquake<b><?php echo $file; ?></b> 1</td>
-			<td><?php  echo $userRow['earthquake']; ?></td>
+			<td><?php  echo $userRow['kills']; ?></td>
 			<td>YES</td>
 		</tr>
 		
 		<tr>
 			<td>Fire</td>
-			<td><?php  echo $userRow['fire']; ?></td>
+			<td><?php  echo $userRow['kills']; ?></td>
 			<td>YES</td>
 		</tr>
 
@@ -168,19 +168,19 @@ table tr:last-child td {
 
 		<tr>
 			<td>Gas Leaking</td>
-			<td><?php  echo $userRow['gas']; ?></td>
+			<td><?php  echo $userRow['kills']; ?></td>
 			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Electricity Fault</td>
-			<td><?php  echo $userRow['electricity']; ?></td>
+			<td><?php  echo $userRow['kills']; ?></td>
 			<td>YES</td>
 		</tr>
 
 		<tr>
 			<td>Game</td>
-			<td><?php  echo $userRow['ourgame']; ?></td>
+			<td><?php  echo $userRow['kills']; ?></td>
 			<td>YES</td>
 		</tr>
 		
