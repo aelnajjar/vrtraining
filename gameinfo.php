@@ -90,9 +90,9 @@ if ($stmt = $mysqli->prepare($query)) {
         echo '"email": "' . $email . '",';
         echo '"banned": "' . $banned . '",';
         echo '"earthquake": "' . $earthquake . '",';
-        echo '"fire": "' . $fire . '"';
+        echo '"fire": "' . $fire . '",';
 	echo '"gas": "' . $gas . '",';
-        echo '"electricity": "' . $electricity . '"';
+        echo '"electricity": "' . $electricity . '",';
 	echo '"ourgame": "' . $ourgame . '"';
         echo "}";
     }
