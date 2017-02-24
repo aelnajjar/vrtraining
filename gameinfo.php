@@ -78,11 +78,11 @@ $rk = $_GET["rk"];
 
 
 
-$query = "SELECT username, status, email, banned, earthquake, fire FROM users2 WHERE regkey='$rk'";
+$query = "SELECT username, status, email, banned, earthquake, fire, gas, electricity, ourgame FROM users2 WHERE regkey='$rk'";
 
 if ($stmt = $mysqli->prepare($query)) {
     $stmt->execute();
-    $stmt->bind_result($username, $status, $email, $banned, $earthquake, $fire);
+    $stmt->bind_result($username, $status, $email, $banned, $earthquake, $fire, $gas, $electricity, $ourgame);
     while ($stmt->fetch()) {
      echo "{";
 	 echo '"status": "' . $status . '",';
@@ -90,7 +90,10 @@ if ($stmt = $mysqli->prepare($query)) {
         echo '"email": "' . $email . '",';
         echo '"banned": "' . $banned . '",';
         echo '"earthquake": "' . $earthquake . '",';
-        echo '"fire": "' . $fire . '"';
+	    echo '"fire": "' . $fire . '",';
+	    echo '"gas": "' . $gas . '",';
+	    echo '"electricity": "' . $electricity . '",';
+        echo '"ourgame": "' . $ourgame . '"';
         echo "}";
     }
 
