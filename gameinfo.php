@@ -82,15 +82,15 @@ $query = "SELECT username, status, email, banned, kills, wins FROM users2 WHERE 
 
 if ($stmt = $mysqli->prepare($query)) {
     $stmt->execute();
-    $stmt->bind_result($username, $status, $email, $banned, $kills, $wins);
+    $stmt->bind_result($username, $status, $email, $banned, $earthquake, $fire);
     while ($stmt->fetch()) {
      echo "{";
 	 echo '"status": "' . $status . '",';
         echo '"username": "' . $username . '",';
         echo '"email": "' . $email . '",';
         echo '"banned": "' . $banned . '",';
-        echo '"earthquake": "' . $kills . '",';
-        echo '"fire": "' . $wins . '"';
+        echo '"earthquake": "' . $earthquake . '",';
+        echo '"fire": "' . $fire . '"';
         echo "}";
     }
 
