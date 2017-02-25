@@ -40,7 +40,7 @@ mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned);
 mysqli_stmt_fetch($stmt);
 
 if(password_verify($password, $hashed_password)){
-    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned));
+    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned, 'earthquake' => $earthquake));
 }else{
     // incorrect password
 }
