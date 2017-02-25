@@ -25,7 +25,7 @@ $username = $_GET["user"];
 $password = $_GET["password"];
 
 // create a prepared statement
-$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned FROM users2 WHERE username='$username'");
+$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned, earthquake FROM users2 WHERE username='$username'");
 
 // bind parameters
 mysqli_stmt_bind_param($stmt, 's', $username);
