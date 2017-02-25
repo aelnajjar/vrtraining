@@ -34,7 +34,7 @@ mysqli_stmt_bind_param($stmt, 's', $username);
 mysqli_stmt_execute($stmt);
 
 // bind result variables
-mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned, $earthquake);
+mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned);
 
 // fetch value
 mysqli_stmt_fetch($stmt);
