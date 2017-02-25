@@ -200,10 +200,10 @@ require("phpToPDF.php");
 // FOR ALL AVAILABLE OPTIONS, VISIT HERE:  http://phptopdf.com/documentation/
 $pdf_options = array(
   "source_type" => 'url',
-  "source" => 'http://google.com',
+  "source" => 'http://vrtraining.azurewebsites.net/records.php?server',
   "action" => 'save',
   "save_directory" => '',
-  "file_name" => 'url_google.pdf');
+  "file_name" => 'records.pdf');
 
 // CALL THE phptopdf FUNCTION WITH THE OPTIONS SET ABOVE
 phptopdf($pdf_options);
