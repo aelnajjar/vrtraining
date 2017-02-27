@@ -51,9 +51,10 @@ $MySQLi_CON->close();
       </div>
     </nav>
 
-<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
+<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:30px;">
 	Welcome To VR-Based Crises Training System</a><br /><br />
     <p>You Can Now Login Using Your Platform and Enjoy This Amazing Training !</p>
+	 <p>Also you can click on Records button in the bar to check your records</p>
 </div>
 
 </body>
