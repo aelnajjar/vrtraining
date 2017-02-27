@@ -43,8 +43,11 @@ if(isset($_POST['btn-login']))
 </head>
 	
 
-         
-          <a class="navbar-brand" href="#">VR-Based Crises Training System</a>
+         <div class="navbar-brand" style="margin-top:150px;text-align:center;font-size:30px;">
+		 Welcome To VR-Based Crises Training System<
+          /a>
+	
+
         
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
