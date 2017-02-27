@@ -44,7 +44,7 @@ if(isset($_POST['btn-login']))
 	
 
          
-          <a class="navbar-brand;text-align:center;" href="#">VR-Based Crises Training System</a>
+          <a class="navbar-brand" href="#">VR-Based Crises Training System</a>
         
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
