@@ -25,7 +25,7 @@ $username = $_GET["user"];
 $password = $_GET["password"];
 
 // create a prepared statement
-$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned, earthquake FROM users2 WHERE username='$username'");
+$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned FROM users2 WHERE username='$username'");
 
 // bind parameters
 mysqli_stmt_bind_param($stmt, 's', $username);
@@ -34,13 +34,13 @@ mysqli_stmt_bind_param($stmt, 's', $username);
 mysqli_stmt_execute($stmt);
 
 // bind result variables
-mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned, $earthquake);
+mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned);
 
 // fetch value
 mysqli_stmt_fetch($stmt);
 
 if(password_verify($password, $hashed_password)){
-    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned, 'earthquake' => $earthquake));
+    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned));
 }else{
     // incorrect password
 }
@@ -78,11 +78,11 @@ $rk = $_GET["rk"];
 
 
 
-$query = "SELECT username, status, email, banned, earthquake, fire, gas, electricity, ourgame FROM users2 WHERE regkey='$rk'";
+$query = "SELECT username, status, email, banned, earthquake, fire FROM users2 WHERE regkey='$rk'";
 
 if ($stmt = $mysqli->prepare($query)) {
     $stmt->execute();
-    $stmt->bind_result($username, $status, $email, $banned, $earthquake, $fire, $gas, $electricity, $ourgame);
+    $stmt->bind_result($username, $status, $email, $banned, $earthquake, $fire);
     while ($stmt->fetch()) {
      echo "{";
 	 echo '"status": "' . $status . '",';
@@ -90,10 +90,7 @@ if ($stmt = $mysqli->prepare($query)) {
         echo '"email": "' . $email . '",';
         echo '"banned": "' . $banned . '",';
         echo '"earthquake": "' . $earthquake . '",';
-	    echo '"fire": "' . $fire . '",';
-	    echo '"gas": "' . $gas . '",';
-	    echo '"electricity": "' . $electricity . '",';
-        echo '"ourgame": "' . $ourgame . '"';
+        echo '"fire": "' . $fire . '"';
         echo "}";
     }
 
