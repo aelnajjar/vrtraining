@@ -2,7 +2,7 @@
 
    include_once 'dbconnect.php';
 
-    $sql = "INSERT INTO vrgame.users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
+    $sql = "INSERT INTO users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
 
     // Execute SQL statement
 
