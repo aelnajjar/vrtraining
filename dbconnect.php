@@ -11,9 +11,9 @@
      {
          die("ERROR : -> ".$MySQLi_CON->connect_error);
      }
-$sql = "INSERT INTO users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
+$query = "INSERT INTO users2(earthquake) VALUES('".$_GET["earthquake"]."')";   
 
     // Execute SQL statement
 
-    mysql_query($sql);
+ 
 ?>
