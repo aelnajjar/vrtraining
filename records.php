@@ -153,7 +153,7 @@ table tr:last-child td {
 	<tbody>
 	
 		<tr>
-			<td>Earthquake<b><?php echo $file; ?></b> 1</td>
+			<td>Earthquake<b><?php echo $file; ?></b> </td>
 			<td><?php  echo $userRow['earthquake']; ?></td>
 			<td>YES</td>
 		</tr>
