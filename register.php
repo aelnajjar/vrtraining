@@ -27,7 +27,7 @@ if(isset($_POST['btn-signup']))
 		
 		
 		
-		$query = "INSERT INTO users2(username,email,password,regkey,status,banned,earthquake) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned','.$_GET["earthquake"].')";
+		$query = "INSERT INTO users2(username,email,password,regkey,status,banned) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned')";
 
 		
 		if($MySQLi_CON->query($query))
