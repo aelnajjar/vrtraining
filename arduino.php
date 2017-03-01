@@ -2,10 +2,10 @@
 
    include_once 'dbconnect.php';
 
-    $sql = "INSERT INTO users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
+    $query = "INSERT INTO users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
 
     // Execute SQL statement
 
-    mysql_query($sql);
+    mysql_query($query);
 
 ?>
