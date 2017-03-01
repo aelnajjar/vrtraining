@@ -6,14 +6,14 @@
 	 $DB_name = "vrgame";
 	 
 	 $MySQLi_CON = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
-    
+
+    $query = "INSERT INTO users2(earthquake) VALUES('".$_GET["earthquake"]."')";   
+
+ mysql_query($query);
+
      if($MySQLi_CON->connect_errno)
      {
          die("ERROR : -> ".$MySQLi_CON->connect_error);
      }
-$query = "INSERT INTO users2(earthquake) VALUES('".$_GET["earthquake"]."')";   
 
-    // Execute SQL statement
-
- mysql_query($query);
 ?>
