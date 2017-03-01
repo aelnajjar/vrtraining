@@ -12,7 +12,7 @@ $dbconnect = mysql_pconnect($DB_host, $DB_user, $DB_pass);
 
     // Prepare the SQL statement
 
-    $query = "UPDATE INTO vrgame.users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
+    $query = "UPDATE vrgame.users2 (earthquake) VALUES ('".$_GET["earthquake"]."')";    
 
     // Execute SQL statement
 
