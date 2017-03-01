@@ -7,7 +7,6 @@
 	 
 	 $MySQLi_CON = new MySQLi($DB_host,$DB_user,$DB_pass,$DB_name);
 
-    $query = "INSERT INTO vrgame.users2 (earthquake) VALUES('".$_GET["earthquake"]."')";   
 
  mysql_query($query);
 
