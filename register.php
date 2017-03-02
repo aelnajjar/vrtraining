@@ -17,13 +17,16 @@ if(isset($_POST['btn-signup']))
 	$check_email = $MySQLi_CON->query("SELECT email FROM users2 WHERE email='$email'");
 	$count=$check_email->num_rows;
 	
+	$check_username = $MySQLi_CON->query("SELECT username FROM users2 WHERE username='$uname'");
+	$Ucount=$check_username->num_rows;
+	
 	$RandomKey = mt_rand(1,50);
 	$RegKey = hash_hmac('sha512', $value, $RandomKey);
 	$Status = 'online';
 	$Banned = 'no';
 	
 	
-	if($count==0){
+	if($count==0 && $Ucount==0){
 		
 		
 		
@@ -49,7 +52,7 @@ if(isset($_POST['btn-signup']))
 		
 		
 		$msg = "<div class='alert alert-danger'>
-					<span class='glyphicon glyphicon-info-sign'></span> &nbsp; sorry email already taken !
+					<span class='glyphicon glyphicon-info-sign'></span> &nbsp; sorry email or User name already taken !
 				</div>";
 			
 	}
