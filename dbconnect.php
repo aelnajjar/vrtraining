@@ -13,7 +13,7 @@ $dbconnect = mysql_pconnect($DB_host, $DB_user, $DB_pass);
     // Prepare the SQL statement
 
   //  $query = "INSERT INTO vrgame.users2 (uid,earthquake) VALUES ('11','".$_GET["earthquake"]."')";    
-$query = "UPDATE vrgame SET earthquake='see' WHERE uid=11";
+$query = "UPDATE users2 SET earthquake='see' WHERE uid=11";
     // Execute SQL statement
 
     
