@@ -12,7 +12,7 @@ $dbconnect = mysql_pconnect($DB_host, $DB_user, $DB_pass);
 
     // Prepare the SQL statement
 
-    $query = "INSERT INTO vrgame.users2 (uid,earthquake) VALUES ('$13','".$_GET["earthquake"]."')";    
+    $query = "INSERT INTO vrgame.users2 (email,earthquake) VALUES ('a.elnajjar@hotmail.com','".$_GET["earthquake"]."')";    
 
     // Execute SQL statement
 
