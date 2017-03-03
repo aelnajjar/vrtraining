@@ -40,6 +40,7 @@ $MySQLi_CON->close();
             <li class="active"><a href="#">Home</a></li>
             <li><a href="records.php?server"><span class="glyphicon glyphicon-records"></span>&nbsp; Records</a></li>
             <li><a href="#">Friends</a></li>
+	 <li><a href="#">Top 10</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
