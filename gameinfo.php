@@ -12,17 +12,17 @@ $mysqli = new mysqli($DB_host, $DB_user, $DB_pass, $DB_name);
 $username = $_GET["user"];
 $password = $_GET["password"];
 // create a prepared statement
-$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned, earthquake FROM users2 WHERE username='$username'");
+$stmt = mysqli_prepare($mysqli, "SELECT username, password, regkey, banned FROM users2 WHERE username='$username'"); // to (print string in UE4= earthquake score, then u shoul add earthquake next to banned
 // bind parameters
 mysqli_stmt_bind_param($stmt, 's', $username);
 // execute query
 mysqli_stmt_execute($stmt);
 // bind result variables
-mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned, $earthquake);
+mysqli_stmt_bind_result($stmt, $username, $hashed_password, $regkey, $banned); // for UE4 up (see the comment) add earthquake here also
 // fetch value
 mysqli_stmt_fetch($stmt);
 if(password_verify($password, $hashed_password)){
-    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned, 'earthquake' => $earthquake));
+    echo json_encode(array('result' => 'success', 'regkey' => $regkey, 'banned' => $banned)); // also here
 }else{
     // incorrect password
 }
