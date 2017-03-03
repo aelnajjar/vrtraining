@@ -13,7 +13,7 @@ $dbconnect = mysql_pconnect($DB_host, $DB_user, $DB_pass);
     // Prepare the SQL statement
 
   //  $query = "INSERT INTO vrgame.users2 (uid,earthquake) VALUES ('11','".$_GET["earthquake"]."')";    this will add new row with id=11 and earthquake equal to what u will type
-$query = "UPDATE users2 SET earthquake='".$_GET["earthquake"]."' WHERE uid=11";
+$query = "UPDATE users2 SET earthquake='".$_GET["earthquake"]."' WHERE uid='11';
 
     // Execute SQL statement
 
