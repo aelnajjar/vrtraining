@@ -54,41 +54,8 @@ $MySQLi_CON->close();
 		
 	<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	Your Records</a><br /><br />
-<!DOCTYPE html>
-<html>
-<body>
-
-<?php
-echo "<table style='border: solid 1px black;'>";
-  echo "<tr><th>#</th><th>User</th><th>Score</th></tr>";
-
-class TableRows extends RecursiveIteratorIterator { 
-     function __construct($it) { 
-         parent::__construct($it, self::LEAVES_ONLY); 
-     }
-
-     function current() {
-         return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
-     }
-
-     function beginChildren() { 
-         echo "<tr>"; 
-     } 
-
-     function endChildren() { 
-         echo "</tr>" . "\n";
-     } 
-} 
 
 
 
-}
-catch(PDOException $e) {
-     echo "Error: " . $e->getMessage();
-}
-$conn = null;
-echo "</table>";
-?>  
+SELECT username, Rating FROM <users2> ORDER BY game DESC LIMIT 10;
 
-</body>
-</html>
