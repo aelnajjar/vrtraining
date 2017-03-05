@@ -51,12 +51,7 @@ $MySQLi_CON->close();
         </div><!--/.nav-collapse --> 
       </div>
     </nav>
-		
-	<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
-	Your Records</a><br /><br />
 
-<?php
 
-$query = $MySQLi_CON->query("SELECT username, ourgame FROM <users2> ORDER BY ourgame DESC LIMIT 10);
 
 
