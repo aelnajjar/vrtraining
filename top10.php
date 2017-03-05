@@ -60,7 +60,3 @@ $MySQLi_CON->close();
 $query = $MySQLi_CON->query("SELECT username, ourgame FROM <users2> ORDER BY ourgame DESC LIMIT 10);
 
 
-?>
-
-</body>
-</html>
