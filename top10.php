@@ -65,8 +65,11 @@ table, th, td {
 
 <?php
 
-
-$query = "SELECT uid, username FROM <users2> ORDER BY ourgame DESC LIMIT 10";
+$query= "select username
+from users2
+order by 
+ourgame 10";
+// $query = "SELECT uid, username FROM <users2> ORDER BY ourgame DESC LIMIT 10";
 /*$result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
