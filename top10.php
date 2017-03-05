@@ -55,7 +55,8 @@ $MySQLi_CON->close();
 	<div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	Your Records</a><br /><br />
 
-
+<?php
 
 SELECT username, Rating FROM <users2> ORDER BY game DESC LIMIT 10;
 
+?>
