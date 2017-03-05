@@ -180,9 +180,9 @@ table tr:last-child td {
 		</tr>
 
 		<tr>
-			<td>Game</td>
+			<td>Score</td>
 			<td><?php  echo $userRow['ourgame']; ?></td>
-			<td>YES</td>
+			<td></td>
 		</tr>
 		
 
