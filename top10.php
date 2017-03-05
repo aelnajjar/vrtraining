@@ -66,8 +66,8 @@ table, th, td {
 <?php
 
 
-$sql = "SELECT uid, username, ourgame FROM users2";
-$result = $conn->query($sql);
+$sql = "SELECT uid, username FROM <Table> ORDER BY ourgame DESC LIMIT 10";
+/*$result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
      echo "<table><tr><th>#</th><th>User Name</th></tr>";
@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
      echo "0 results";
 }
 
-$conn->close();
+$conn->close(); */
 ?>  
 
 </body>
