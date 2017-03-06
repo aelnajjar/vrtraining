@@ -76,7 +76,6 @@ class TableRows extends RecursiveIteratorIterator {
         echo "</tr>" . "\n";
     } 
 	try {
-    include_once 'dbconnect.php';
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2 "); 
     $stmt->execute();
