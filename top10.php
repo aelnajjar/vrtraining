@@ -46,8 +46,10 @@ $MySQLi_CON->close();
 		  
             <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['username']; ?></a></li>
             <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp; Logout</a></li>
-		 
-		  
+		<?php
+		  $query = "SELECT * FROM users2 LIMIT 5";
+	mysql_query($query); 
+		  ?>
           </ul>
         </div><!--/.nav-collapse --> 
       </div>
@@ -65,8 +67,7 @@ table, th, td {
 <body>
 
 <?php
-$query = "SELECT * FROM users2 LIMIT 5";
-	mysql_query($query);
+
 //$query = "SELECT username,ourgame FROM (SELECT username,ourgame FROM users2 ORDER BY ourgame ASC LIMIT 10) ORDER BY ourgame ASC";
 // $query = "SELECT uid, username FROM <users2> ORDER BY ourgame DESC LIMIT 10";
 /*$result = $conn->query($sql);
