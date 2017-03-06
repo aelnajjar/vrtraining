@@ -76,8 +76,8 @@ class TableRows extends RecursiveIteratorIterator {
         echo "</tr>" . "\n";
     } 
 	try {
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2 "); 
+  
+    $stmt = prepare("SELECT uid, username, ourgame FROM users2 "); 
     $stmt->execute();
 
     // set the resulting array to associative
