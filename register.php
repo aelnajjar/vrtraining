@@ -24,13 +24,17 @@ if(isset($_POST['btn-signup']))
 	$RegKey = hash_hmac('sha512', $value, $RandomKey);
 	$Status = 'online';
 	$Banned = 'no';
-	
+	$earthquake = 'NO';
+	$fire = 'NO';
+	$gas = 'NO';
+	$electricity = 'NO';
+	$ourgame = '0';
 	
 	if($count==0 && $Ucount==0){
 		
 		
 		
-		$query = "INSERT INTO users2(username,email,password,regkey,status,banned) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned')";
+$query = "INSERT INTO users2(username,email,password,regkey,status,banned,earthquake,fire,gas,electricity,ourgame) VALUES('$uname','$email','$new_password','$RegKey','$Status','$Banned','$earthquake','$fire','$gas','$electricity','$ourgame')";
 
 		
 		if($MySQLi_CON->query($query))
