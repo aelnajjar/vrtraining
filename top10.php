@@ -55,38 +55,37 @@ $MySQLi_CON->close();
       </div>
     </nav>
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table, th, td {
-     border: 1px solid black;
-}
-</style>
-</head>
-<body>
-
 <?php
+echo "<table style='border: solid 1px black;'>";
+echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
 
-//$query = "SELECT username,ourgame FROM (SELECT username,ourgame FROM users2 ORDER BY ourgame ASC LIMIT 10) ORDER BY ourgame ASC";
-// $query = "SELECT uid, username FROM <users2> ORDER BY ourgame DESC LIMIT 10";
-/*$result = $conn->query($sql);
+class TableRows extends RecursiveIteratorIterator { 
+    function __construct($it) { 
+        parent::__construct($it, self::LEAVES_ONLY); 
+    }
 
-if ($result->num_rows > 0) {
-     echo "<table><tr><th>#</th><th>User Name</th></tr>";
-     // output data of each row
-     while($row = $result->fetch_assoc()) {
-         echo "<tr><td>" . $row["uid"]. "</td><td>" . $row["User name"]. " " . $row["ourgame"]. "</td></tr>";
-     }
-     echo "</table>";
-} else {
-     echo "0 results";
-}
+    function current() {
+        return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+    }
 
-$conn->close(); */
-?>  
+    function beginChildren() { 
+        echo "<tr>"; 
+    } 
 
-</body>
-</html>
+    function endChildren() { 
+        echo "</tr>" . "\n";
+    } 
+	try {
+    include_once 'dbconnect.php';
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2 "); 
+    $stmt->execute();
 
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) { 
+        echo $v;
+    }
+} 
 
+?>
