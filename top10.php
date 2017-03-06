@@ -38,8 +38,9 @@ $MySQLi_CON->close();
             <li class="active"><a href="#">Top 10</a></li>
            
 		  <li><a href="home.php?home"><span class="glyphicon glyphicon-home"></span>&nbsp; Home</a></li>
+		  <li><a href="records.php?home"><span class="glyphicon glyphicon-record"></span>&nbsp; Records</a></li>
             <li><a href="#">Friends</a></li>
-		  <li><a href="#">Records</a></li>
+		  
           </ul>
           <ul class="nav navbar-nav navbar-right">
 		  
