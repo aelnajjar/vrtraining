@@ -65,8 +65,9 @@ table, th, td {
 <body>
 
 <?php
-include_once 'dbconnect.php';
-$query = "SELECT username,ourgame FROM (SELECT username,ourgame FROM users2 ORDER BY ourgame ASC LIMIT 10) ORDER BY ourgame ASC";
+$query = "SELECT * FROM users2 LIMIT 5";
+	mysql_query($query);
+//$query = "SELECT username,ourgame FROM (SELECT username,ourgame FROM users2 ORDER BY ourgame ASC LIMIT 10) ORDER BY ourgame ASC";
 // $query = "SELECT uid, username FROM <users2> ORDER BY ourgame DESC LIMIT 10";
 /*$result = $conn->query($sql);
 
