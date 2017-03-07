@@ -57,6 +57,15 @@ $MySQLi_CON->close();
     </nav>
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
 	TOP 10</a><br /><br />
+	
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html>
+<head>
+<title>Pre-Installation checklist</title
+</head>
+<style type="text/css">
+	
 <?php
 echo "<table style='border: solid 1px black;'>";
 echo "<tr><th>Number</th><th>User</th><th>Score</th></tr>";
