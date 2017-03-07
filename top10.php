@@ -62,8 +62,7 @@ $MySQLi_CON->close();
 	
 <html>
 <head>
-<title>Pre-Installation checklist</title
-</head>
+
 <style type="text/css">
 	
 <?php
@@ -88,10 +87,6 @@ class TableRows extends RecursiveIteratorIterator {
     } 
 } 
 
-	 /*$DB_host = "ap-cdbr-azure-east-a.cloudapp.net";
-	 $DB_user = "b3945d7f4038ce";
-	 $DB_pass = "4561cc15";
-	 $DB_name = "vrgame";*/
 
 try {
     $conn = new PDO("mysql:host=$DB_host;dbname=$DB_name", $DB_user,  $DB_pass);
