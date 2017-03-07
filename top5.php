@@ -1,6 +1,6 @@
 <?php
 echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
+echo "<tr><th>Number</th><th>User</th><th>Score</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator { 
     function __construct($it) { 
@@ -20,15 +20,15 @@ class TableRows extends RecursiveIteratorIterator {
     } 
 } 
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDBPDO";
+	 $DB_host = "ap-cdbr-azure-east-a.cloudapp.net";
+	 $DB_user = "b3945d7f4038ce";
+	 $DB_pass = "4561cc15";
+	 $DB_name = "vrgame";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$DB_host;dbname=$DB_name", $DB_user,  $DB_pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests"); 
+    $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2"); 
     $stmt->execute();
 
     // set the resulting array to associative
