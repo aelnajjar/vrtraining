@@ -1,5 +1,13 @@
+
 <?php
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html>
+<head>
+<title>Pre-Installation checklist</title
+</head>
+<style type="text/css">
+	
 session_start();
 include_once 'dbconnect.php';
 if(!isset($_SESSION['userSession']))
