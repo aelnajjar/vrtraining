@@ -62,7 +62,7 @@ $MySQLi_CON->close();
 	
 <?php
 echo "<table style='border: solid 1px black;text-align:center;'>";
-echo "<tr><th>Number</th><th>User</th><th>Score</th></tr>";
+echo "<tr><th>Number</th><th>  User</th><th>Score</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator { 
     function __construct($it) { 
@@ -84,6 +84,7 @@ class TableRows extends RecursiveIteratorIterator {
 
 
 try {
+	
     $conn = new PDO("mysql:host=$DB_host;dbname=$DB_name", $DB_user,  $DB_pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2"); 
