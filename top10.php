@@ -62,7 +62,7 @@ $MySQLi_CON->close();
 	
 <?php
 echo "<table style='border: solid 1px black;text-align:center;'>";
-echo "<tr><th>Number</th><th>  User</th><th>Score</th></tr>";
+echo "<tr><th>Number</th>  <th>User</th><th>Score</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator { 
     function __construct($it) { 
