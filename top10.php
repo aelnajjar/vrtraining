@@ -56,9 +56,9 @@ $MySQLi_CON->close();
       </div>
     </nav>
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
-	TOP 10</a><br /><br />
+	TOP 10</a><br /><br /> <
 	
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
 	
 
 	
