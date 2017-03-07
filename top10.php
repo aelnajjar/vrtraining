@@ -57,9 +57,10 @@ $MySQLi_CON->close();
     </nav>
 	
 <div class="container" style="margin-top:150px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:35px;">
-	TOP 10 <
+	TOP 10 </a><br /><br />
 	
 <?php
+	
 echo "<table style='border: solid 1px black;text-align:center;'>";
 echo "<tr><th>Number</th>  <th>User</th><th>Score</th></tr>";
 
