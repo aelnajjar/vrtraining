@@ -88,7 +88,7 @@ try {
     $conn = new PDO("mysql:host=$DB_host;dbname=$DB_name", $DB_user,  $DB_pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   //  $stmt = $conn->prepare("SELECT username, ourgame Rating FROM users2 ORDER BY ourgame DESC LIMIT 10;"); 
-	 $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2 ORDER BY uid DESC LIMIT 5;"); 
+	 $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2 ORDER BY uid ASC LIMIT 5;"); 
 	
     $stmt->execute();
 
