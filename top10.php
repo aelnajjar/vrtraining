@@ -89,7 +89,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   //  $stmt = $conn->prepare("SELECT username, ourgame Rating FROM users2 ORDER BY ourgame DESC LIMIT 10;"); 
 	 $stmt = $conn->prepare("SELECT uid, username, ourgame FROM users2;"); 
-	]
+	
     $stmt->execute();
 
     // set the resulting array to associative
