@@ -44,7 +44,7 @@ if(isset($_POST['btn-login']))
 	
 
          <div class="navbar-brand" style="margin-top:50px;text-align:center;font-size:30px;">
-		 Welcome To VR-Based Crises Training System
+		 Welcome To VR-Based Crisis Training System
           
 	
 
