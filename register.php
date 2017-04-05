@@ -24,10 +24,10 @@ if(isset($_POST['btn-signup']))
 	$RegKey = hash_hmac('sha512', $value, $RandomKey);
 	$Status = 'online';
 	$Banned = 'no';
-	$earthquake = 'NO';
-	$fire = 'NO';
-	$gas = 'NO';
-	$electricity = 'NO';
+	$earthquake = '0';
+	$fire = '0';
+	$gas = '0';
+	$electricity = '0';
 	$ourgame = '0';
 	
 	if($count==0 && $Ucount==0){
