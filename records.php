@@ -144,7 +144,7 @@ table tr:last-child td {
 	<thead>
 		<tr>
 			<th>Trainings</th>
-			<th>Completed</th>
+			<th>Score</th>
 			<th>Recommended</th>
 		</tr>
 	</thead>
@@ -180,7 +180,7 @@ table tr:last-child td {
 		</tr>
 
 		<tr>
-			<td>Score</td>
+			<td>Total Score</td>
 			<td><?php  echo $userRow['ourgame']; ?></td>
 			<td></td>
 		</tr>
