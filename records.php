@@ -144,8 +144,8 @@ table tr:last-child td {
 	<thead>
 		<tr>
 			<th>Trainings</th>
-			<th>Score</th>
-			<th>Recommended</th>
+			<th>  Score</th>
+			<th>  Recommended</th>
 		</tr>
 	</thead>
 	<!-- Table Header -->
