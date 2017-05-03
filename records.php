@@ -174,7 +174,7 @@ table tr:last-child td {
 		</tr>
 
 		<tr>
-			<td>Electricity Fault</td>
+			<td>Kitchen Fire</td>
 			<td><?php  echo $userRow['electricity']; ?></td>
 			<td>YES</td>
 		</tr>
