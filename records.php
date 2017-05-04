@@ -67,7 +67,7 @@ $MySQLi_CON->close();
 /*TABLE CSS*/
 
 #wrap {
-    margin: 10px auto 0;
+    margin: 8px auto 0;
     text-align: center;
     width: 500px;
 }
