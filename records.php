@@ -52,7 +52,7 @@ $MySQLi_CON->close();
       </div>
     </nav>
 		
-	<div class="container" style="margin-top:100px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:10px;">
+	<div class="container" style="margin-top:100px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:5px;">
 	Your Records</a><br /><br />
   
 	
