@@ -53,8 +53,8 @@ $MySQLi_CON->close();
     </nav>
 		
 	<div class="container" style="margin-top:60px;text-align:center;font-family:Verdana, Geneva, sans-serif;font-size:30px;">
-	Your Records</a><br /><br />
-  
+	Your Records</a><br />
+ 
 	
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	
